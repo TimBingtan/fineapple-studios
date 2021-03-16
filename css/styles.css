@@ -15,7 +15,6 @@ body {
   padding: 0 2%
 }
 
-
 .nav-item {
   padding: 0 0.7rem;
 }
@@ -26,9 +25,12 @@ body {
   color: #ffffff !important;
 }
 
+
 .d-block {
   height: 55rem;
+  margin: 0 auto;
 }
+
 
 .about {
   text-align: center;
