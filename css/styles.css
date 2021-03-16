@@ -1,0 +1,154 @@
+body {
+  background-color: #171717;
+}
+
+
+.title {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 2.5rem;
+  /* line-height: 0.75 */
+}
+
+
+.container-fluid {
+  padding: 0 2%
+}
+
+
+.nav-item {
+  padding: 0 0.7rem;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff !important;
+}
+
+.d-block {
+  height: 55rem;
+}
+
+.about {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Nunito", "sans-serif";
+  padding: 2rem 0 40rem;
+}
+
+.mission-heading {
+  font-size: 5.5rem;
+}
+
+
+#who-we-are {
+  background-color: #ffffff;
+}
+
+.members {
+  color: #000000; /*Looks like this is still black even if not assigned. Like it's responsive to background color...*/
+  text-align: center;
+  font-family: "Nunito", "sans-serif";
+  padding: 2.5rem 0 20rem;
+}
+
+
+.members-heading {
+  font-size: 4.2rem;
+  font-style: bold;
+}
+
+.members-subheading {
+  padding-top: 4%;
+  color: #ffd369;
+}
+
+.member-row {
+  padding: 2% 0;
+}
+
+.member-image {
+  width: 12.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.member-image:hover {
+  opacity: 0.55;
+}
+
+.bio-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+.contact-container {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.contact-row {
+  padding-top: 2.2rem;
+  padding-bottom: 4rem;
+}
+
+.contact-icon {
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contact-icon:hover {
+  opacity: 0.5;
+}
+
+#footer {
+  color: #ffffff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+/*** Bio Pages ***/
+
+.bio {
+  background-color: #ffffff;
+  height: 50em;
+}
+
+.bio-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bio-image {
+  width: 40.5rem;
+  margin: 3em 5em auto;
+  float: left;
+}
+
+.title-name {
+  padding-top: 2rem;
+  font-size: 4em;
+}
+
+.bio-roles {
+  font-weight: light;
+  color: #ffd369;
+}
+
+.bio-description {
+  margin-top: 3.25em;
+}
+
+
+/*** Merch Page ***/
+.merch {
+  background-color: #ffffff;
+  height: 50em;
+}
