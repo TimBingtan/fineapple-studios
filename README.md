@@ -1,2 +1,2 @@
-# d42-contemporary
-Website for D42 Contemporary
+# fineapple-studios
+Website for Fineapple Studios
