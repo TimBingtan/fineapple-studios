@@ -15,14 +15,26 @@ body {
   padding: 0 2%
 }
 
-.nav-item {
-  padding: 0 0.7rem;
+.navbar {
+  position: fixed;
+  background-color: #171717;
 }
 
-.nav-link {
+.nav-item {
+  padding: 0 0.7rem;
   font-weight: bold;
   font-style: normal;
-  color: #ffffff !important;
+}
+
+/* Try to do an underline on hover and fix hover color. LATER*/
+
+
+.title, .nav-link {
+  color: #ffffff;
+}
+
+.switch-pg-link {
+  color: #ffd369;
 }
 
 
@@ -83,8 +95,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
-
 
 
 .contact-container {

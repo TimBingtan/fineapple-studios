@@ -1,0 +1,27 @@
+{
+  "name": "fineapple-studios",
+  "version": "1.0.0",
+  "description": "Website for D42 Contemporary",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimBingtan/tik-tak-productions.git"
+  },
+  "author": "Tim Bingtan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimBingtan/fineapple-studios/issues"
+  },
+  "homepage": "https://github.com/TimBingtan/fineapple-studios#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12"
+  }
+}
