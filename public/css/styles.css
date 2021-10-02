@@ -4,10 +4,9 @@ body {
 
 
 .title {
-  font-family: "Helvetica";
-  font-weight: bold;
-  font-size: 2.5rem;
-  /* line-height: 0.75 */
+  font-family: 'Lobster', cursive;
+  font-size: 2.7rem;
+  padding-left: 0.5em;
 }
 
 
@@ -15,14 +14,33 @@ body {
   padding: 0 2%
 }
 
-.nav-item {
-  padding: 0 0.7rem;
+.navbar {
+  background-color: #171717;
+  line-height: 1.4;
 }
 
-.nav-link {
+.nav-item {
+  padding: 0 0.7rem;
   font-weight: bold;
-  font-style: normal;
-  color: #ffffff !important;
+  font-family: "Nunito", "sans-serif";
+  font-size: 1.1rem;
+}
+
+/* Try to do an underline on hover and fix hover color. LATER*/
+.title:hover, .nav-link:hover{
+  color: #ffffff;
+}
+
+.title, .nav-link {
+  color: #ffffff;
+}
+
+.switch-pg-link {
+  color: #ffd369;
+}
+
+.switch-pg-link:hover {
+  color: #ffd369;
 }
 
 
@@ -36,7 +54,7 @@ body {
   text-align: center;
   color: #ffffff;
   font-family: "Nunito", "sans-serif";
-  padding: 2rem 0 40rem;
+  padding: 2rem 0 10rem;
 }
 
 .mission-heading {
@@ -84,7 +102,16 @@ body {
   color: inherit;
 }
 
+.social-list {
+  list-style-type: none;
+  line-height: 2.2rem;
+}
 
+.profile-contact-icon {
+  float: left;
+  padding-right: 10px;
+  color: #000000;
+}
 
 
 .contact-container {
@@ -124,7 +151,7 @@ body {
 
 .bio-content {
   width: 80%;
-  margin: 0 auto;
+  margin: 80px auto;
   text-align: left;
 }
 

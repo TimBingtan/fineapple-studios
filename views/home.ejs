@@ -1,0 +1,65 @@
+<%- include("partials/header"); -%>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="Photos/5ea9e35533208d4793ac92c1_5e28eb1064852bb923d5f939_how-to-use-steezy-studio-to-grow-as-a-dancer.jpeg" class="d-block w-100" alt="..."> -->
+        <img src="Photos/5ea9e35533208d4793ac92c1_5e28eb1064852bb923d5f939_how-to-use-steezy-studio-to-grow-as-a-dancer.jpeg" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="Photos/E14-25-Tinikling.jpg" class="d-block w-100" alt="..."> -->
+        <img src="Photos/E14-25-Tinikling.jpg" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="Photos/DSCF1535.jpg" class="d-block w-100" alt="..."> -->
+        <img src="Photos/DSCF1535.jpg" class="d-block" alt="...">
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="Photos/getty_470285218_2000133320009280218_277406.jpg" class="d-block w-100" alt="..."> -->
+        <img src="Photos/getty_470285218_2000133320009280218_277406.jpg" class="d-block" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section id="about-us">
+  <div class="about">
+    <h1 class="mission-heading">Our Mission</h1>
+    <p class="description">To make art that will blow ya mind.</p>
+  </div>
+</section>
+
+<section id="who-we-are">
+  <div class="container-fluid members">
+    <h1 class="members-heading">Our Members</h1>
+    <h2 class="members-subheading">Meet the founders</h2>
+
+    <div class="row member-row"> <!-- Address how this can be scaled -->
+      <% founders.forEach(function(founder){ %>
+        <div class="member-profile col-lg-4">
+          <a href="/founder-profile/<%= founder.firstName %>"><img class="member-image" src="Photos/<%= founder.imageIcon %>" alt="..."></a>
+          <h4><a class="bio-link" href="/founder-profile/<%= founder.firstName %>"><%= founder.firstName %> <%= founder.lastName %></a></h4>
+          <i><%= founder.roleDescription %></i>
+        </div>
+      <% }); %>
+    </div>
+    <h2 class="members-subheading">Meet the artists</h2>
+    <div class="row member-row"> <!-- Address how this can be scaled -->
+      <% artists.forEach(function(artist){ %>
+      <div class="member-profile col-lg-6">
+        <a href="/artist-profile/<%= artist.firstName %>"><img class="member-image" src="Photos/<%= artist.imageIcon %>" alt="..."></a>
+        <h4><a class="bio-link" href="/artist-profile/<%= artist.firstName %>"><%= artist.firstName %> <%= artist.lastName %></a></h4>
+        <i><%= artist.roleDescription %></i>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+<%- include("partials/footer"); -%>
