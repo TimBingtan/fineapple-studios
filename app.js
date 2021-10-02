@@ -83,7 +83,7 @@ let artists = [artist_0, artist_1];
 
 app.get("/", function(req,res){
   const homePageType = true;
-  const title = "FINEAPPLE STUDIOS";
+  const title = "Fineapple Studios";
   res.render("home", {title: title, homePageType: homePageType, founders: founders, artists: artists});
 });
 

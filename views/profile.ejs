@@ -16,7 +16,7 @@
     <ul class="social-list">
       <% for (const soc in memberProfile.socials){ %>
         <li>
-          <a href="<%= memberProfile.socials[soc][1] %>"><i class="fab fa-<%=soc%> fa-2x profile-contact-icon"></i></a>
+          <a href="<%= memberProfile.socials[soc][1] %>" target="_blank" rel="noopener noreferrer"><i class="fab fa-<%=soc%> fa-2x profile-contact-icon"></i></a>
           <p><%= memberProfile.socials[soc][0] %></p>
         </li>
       <% } %>
