@@ -1,7 +1,7 @@
 <%- include("partials/header"); -%>
 <div class="bio">
   <div class="bio-content">
-    <img class="bio-image" src="Photos/<%= memberProfile.imageMain %>" alt="...">
+    <img class="bio-image" src="../Photos/<%= memberProfile.imageMain %>" alt="...">
     <h1 class="title-name"><%= memberProfile.firstName %> <%= memberProfile.lastName %></h1>
     <h5 class="bio-roles"><%= memberProfile.roleDescription %></h5>
     <p class="bio-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -11,6 +11,17 @@
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
       nisi ut aliquip ex ea commodo consequat.
     </p>
+  </div>
+  <div class="bio-socials">
+    <ul class="social-list">
+      <% for (const soc in memberProfile.socials){ %>
+      <% console.log(memberProfile.socials[soc]) %>
+        <li>
+          <a href="<%= memberProfile.socials[soc][1] %>"><i class="fab fa-<%=soc%> fa-2x profile-contact-icon"></i></a>
+          <p><%= memberProfile.socials[soc][0] %></p>
+        </li>
+      <% } %>
+    </ul>
   </div>
 </div>
 <%- include("partials/footer"); -%>
