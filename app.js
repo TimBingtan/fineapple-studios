@@ -100,7 +100,6 @@ app.get("/founder-profile/:member", function(req, res){
   const homePageType = false;
   const name = req.params.member;
   const memberProfile = founders.find(founder => name == founder.firstName);
-  console.log(memberProfile);
   const title = memberProfile.firstName + " " + memberProfile.lastName;
   res.render("profile", {title: title, homePageType: homePageType, memberProfile: memberProfile});
 });
@@ -109,7 +108,6 @@ app.get("/artist-profile/:member", function(req, res){
   const homePageType = false;
   const name = req.params.member;
   const memberProfile = artists.find(artist => name == artist.firstName);
-  console.log(memberProfile);
   const title = memberProfile.firstName + " " + memberProfile.lastName;
   res.render("profile", {title: title, homePageType: homePageType, memberProfile: memberProfile});
 });

@@ -15,7 +15,6 @@
   <div class="bio-socials">
     <ul class="social-list">
       <% for (const soc in memberProfile.socials){ %>
-      <% console.log(memberProfile.socials[soc]) %>
         <li>
           <a href="<%= memberProfile.socials[soc][1] %>"><i class="fab fa-<%=soc%> fa-2x profile-contact-icon"></i></a>
           <p><%= memberProfile.socials[soc][0] %></p>
