@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "lodash": "^4.17.21",
     "mongoose": "^6.0.5",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "ansi-regex": ">=5.0.1"
   }
 }
