@@ -150,15 +150,15 @@ body {
 }
 
 .bio-content {
-  width: 80%;
+  width: 1300px;
   margin: 80px auto;
   text-align: left;
 }
 
 .bio-image {
-  width: 40.5rem;
-  margin: 3em 5em auto;
-  float: left;
+  width: 35.5rem;
+  margin: 3em 0 auto 1em;
+  /*float: left;*/
 }
 
 .title-name {
