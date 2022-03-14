@@ -182,3 +182,13 @@ body {
   background-color: #ffffff;
   height: 50em;
 }
+
+#about-us{
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+#who-we-are {
+  padding-top: 48px;
+  margin-top: -48px
+}
